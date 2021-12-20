@@ -2,8 +2,8 @@
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build-env
 WORKDIR /app
 
-# Copy csproj and restore as distinct layers
-COPY *.csproj ./
+# Copy csproj (sln?) and restore as distinct layers
+COPY *.sln ./
 RUN dotnet restore
 
 # Copy everything else and build
