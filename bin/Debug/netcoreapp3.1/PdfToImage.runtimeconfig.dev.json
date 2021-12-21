@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\golde\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\golde\\.nuget\\packages"
+    ]
+  }
+}
