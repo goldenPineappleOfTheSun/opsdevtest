@@ -1,11 +1,180 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Microsoft.Win32.SystemEvents/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "PdfiumViewer/2.13.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/PdfiumViewer.dll": {},
+          "lib/net20/PdfiumViewer.resources.dll": {}
+        },
+        "runtime": {
+          "lib/net20/PdfiumViewer.dll": {},
+          "lib/net20/PdfiumViewer.resources.dll": {}
+        },
+        "resource": {
+          "lib/net20/nl/PdfiumViewer.resources.dll": {
+            "locale": "nl"
+          }
+        }
+      },
+      "PdfiumViewer.Native.x86_64.v8-xfa/2018.4.8.256": {
+        "type": "package",
+        "build": {
+          "Build/PdfiumViewer.Native.x86_64.v8-xfa.props": {}
+        }
+      },
+      "System.Drawing.Common/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "6.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Drawing.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.Win32.SystemEvents/6.0.0": {
+      "sha512": "hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Win32.SystemEvents.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/Microsoft.Win32.SystemEvents.dll",
+        "lib/net461/Microsoft.Win32.SystemEvents.xml",
+        "lib/net6.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net6.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
+        "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "PdfiumViewer/2.13.0": {
+      "sha512": "Nw4owBmJzDVXoMRjCnqPbET07CPOawwhcNjt+PyRaSxONN9bsFF+cm9kcMsDLEAEaxsiDJo5jls8bCQjvjidkA==",
+      "type": "package",
+      "path": "pdfiumviewer/2.13.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Tools/Install.ps1",
+        "lib/net20/PdfiumViewer.dll",
+        "lib/net20/PdfiumViewer.resources.dll",
+        "lib/net20/PdfiumViewer.xml",
+        "lib/net20/nl/PdfiumViewer.resources.dll",
+        "pdfiumviewer.2.13.0.nupkg.sha512",
+        "pdfiumviewer.nuspec"
+      ]
+    },
+    "PdfiumViewer.Native.x86_64.v8-xfa/2018.4.8.256": {
+      "sha512": "0RQwmLMPKOHBRqRK+NPMR2H5EQ4KlYO+LnT3Y2lByVUa5/JTPCMswL46JEXX+/MAfJtCpS2PzJvy6QzpH2nuIw==",
+      "type": "package",
+      "path": "pdfiumviewer.native.x86_64.v8-xfa/2018.4.8.256",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Build/PdfiumViewer.Native.x86_64.v8-xfa.props",
+        "Build/x64/pdfium.dll",
+        "pdfiumviewer.native.x86_64.v8-xfa.2018.4.8.256.nupkg.sha512",
+        "pdfiumviewer.native.x86_64.v8-xfa.nuspec"
+      ]
+    },
+    "System.Drawing.Common/6.0.0": {
+      "sha512": "NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
+      "type": "package",
+      "path": "system.drawing.common/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/net461/System.Drawing.Common.xml",
+        "lib/net6.0/System.Drawing.Common.dll",
+        "lib/net6.0/System.Drawing.Common.xml",
+        "lib/netcoreapp3.1/System.Drawing.Common.dll",
+        "lib/netcoreapp3.1/System.Drawing.Common.xml",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "runtimes/unix/lib/net6.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/net6.0/System.Drawing.Common.xml",
+        "runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.xml",
+        "runtimes/win/lib/net6.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/net6.0/System.Drawing.Common.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.xml",
+        "system.drawing.common.6.0.0.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "PdfiumViewer >= 2.13.0",
+      "PdfiumViewer.Native.x86_64.v8-xfa >= 2018.4.8.256",
+      "System.Drawing.Common >= 6.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\golde\\.nuget\\packages\\": {}
@@ -45,6 +214,20 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "PdfiumViewer": {
+            "target": "Package",
+            "version": "[2.13.0, )"
+          },
+          "PdfiumViewer.Native.x86_64.v8-xfa": {
+            "target": "Package",
+            "version": "[2018.4.8.256, )"
+          },
+          "System.Drawing.Common": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -66,5 +249,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"PdfiumViewer 2.13.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "PdfiumViewer",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
